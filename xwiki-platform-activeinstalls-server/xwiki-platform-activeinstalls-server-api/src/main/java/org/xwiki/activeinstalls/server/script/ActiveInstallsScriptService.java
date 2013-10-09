@@ -17,7 +17,7 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  */
-package org.xwiki.activeinstalls.internal.server;
+package org.xwiki.activeinstalls.server.script;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -27,6 +27,7 @@ import org.xwiki.activeinstalls.server.DataManager;
 import org.xwiki.component.annotation.Component;
 import org.xwiki.context.Execution;
 import org.xwiki.script.service.ScriptService;
+import org.xwiki.stability.Unstable;
 
 /**
  * Provides Scripting APIs for the Active Installs module.
@@ -37,6 +38,7 @@ import org.xwiki.script.service.ScriptService;
 @Component
 @Named("activeinstalls")
 @Singleton
+@Unstable
 public class ActiveInstallsScriptService implements ScriptService
 {
     /**
